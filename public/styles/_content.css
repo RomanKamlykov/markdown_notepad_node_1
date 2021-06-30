@@ -1,0 +1,52 @@
+/* ----- .content ----- */
+.content > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin-top: 0;
+  /* margin-bottom: 0.5rem; */
+  font-weight: 600;
+}
+.content p {
+  margin-top: 0;
+}
+.content pre {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: hsl(0, 0%, 90%);
+  white-space: pre-wrap;
+}
+.content code {
+  font-family: 'Roboto Mono', monospace;
+  background-color: hsl(0, 0%, 90%);
+}
+.content ul {
+  list-style-type: circle;
+}
+.content ol,
+.content ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+  list-style-position: inside;
+}
+.content ol ol,
+.content ul ul,
+.content ol ul,
+.content ul ol {
+  margin: 0;
+  padding-left: 0.5rem;
+}
+.content hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.content img {
+  max-width: 100%;
+}

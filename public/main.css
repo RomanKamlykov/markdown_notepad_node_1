@@ -1,0 +1,52 @@
+@import './styles/home.css';
+@import './styles/note.css';
+@import './styles/search.css';
+@import './styles/edit.css';
+@import './styles/login.css';
+@import './styles/register.css';
+@import './styles/error.css';
+@import './styles/_loader.css';
+@import './styles/_content.css';
+
+:root {
+  --box-shadow: 0 3px 3px 1px rgba(60, 64, 67, 0.15);
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #333333;
+  overflow-y: scroll;
+}
+.app {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: hsl(0, 0%, 95%);
+  display: flex; justify-content: center;
+  min-height: 100vh;
+}
+.btn-plain {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-link {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(0, 0, 238);
+}

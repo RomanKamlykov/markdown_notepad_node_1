@@ -1,0 +1,9 @@
+{
+  "env": {
+    "ATLAS_USERNAME": "username",
+    "ATLAS_PASSWORD": "password",
+    "ATLAS_DBNAME": "dbname",
+    "JWT_SECRET": "secret",
+    "PORT": "5000"
+  }
+}

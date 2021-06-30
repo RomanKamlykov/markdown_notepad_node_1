@@ -1,0 +1,72 @@
+/* ----- .note ----- */
+.note {
+  width: 800px;
+  min-height: calc(100vh - 2.5rem);
+  padding: 1.25rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: var(--box-shadow);
+}
+.note > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.note h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.note ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ----- .navbar ----- */
+.note .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----- .navbar .breadcrumb ----- */
+.note .navbar .breadcrumb {
+  display: flex;
+}
+.note .navbar .breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+}
+.note .navbar .breadcrumb a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.note .navbar .breadcrumb li:not(:first-child) {
+  padding-left: 0.5rem;
+}
+.note .navbar .breadcrumb li:not(:first-child)::before {
+  content: "/";
+  padding-right: 0.5rem;
+}
+
+/* ----- .navbar .control ----- */
+.note .navbar .control {
+  display: flex;
+}
+.note .navbar .control li:not(:first-child) {
+  padding-left: 0.5rem;
+}
+
+/* ----- .child-notes ----- */
+.note .child-notes h3::after {
+  content: " 📚";
+  font-size: smaller;
+}
+.note .child-notes li::before {
+  content: "📄 ";
+  font-size: smaller;
+  display: inline-block;
+  width: 1.25rem;
+}
+.note .child-notes li:last-of-type::before {
+  content: "➕ ";
+}
+.note .child-notes li:last-of-type form {
+  display: inline;
+}

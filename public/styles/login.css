@@ -1,0 +1,8 @@
+/* ----- .login ----- */
+.login {
+  width: 800px;
+  min-height: calc(100vh - 2.5rem);
+  padding: 1.25rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: var(--box-shadow);
+}

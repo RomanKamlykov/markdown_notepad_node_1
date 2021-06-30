@@ -1,0 +1,40 @@
+/* ----- .search ----- */
+.search {
+  width: 800px;
+  min-height: calc(100vh - 2.5rem);
+  padding: 1.25rem;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: var(--box-shadow);
+}
+.search > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.search ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ----- .navbar ----- */
+.search .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----- .search-form ----- */
+.search .search-form h3::after {
+  content: " 🔎";
+  font-size: smaller;
+}
+
+/* ----- .notes ----- */
+.search .notes h3::after {
+  content: " 📚";
+  font-size: smaller;
+}
+.search .notes li::before {
+  content: "📄 ";
+  font-size: smaller;
+  display: inline-block;
+  width: 1.25rem;
+}

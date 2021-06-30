@@ -1,0 +1,63 @@
+/* ----- .home ----- */
+.home {
+  width: 800px;
+  min-height: calc(100vh - 2.5rem);
+  padding: 1.25rem;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: var(--box-shadow);
+}
+.home > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.home h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.home ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ----- .navbar ----- */
+.home .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----- .child-notes ----- */
+.home .child-notes h3::after {
+  content: " 📚";
+  font-size: smaller;
+}
+.home .child-notes li::before {
+  content: "📄 ";
+  font-size: smaller;
+  display: inline-block;
+  width: 1.25rem;
+}
+.home .child-notes li:last-of-type::before {
+  content: "➕ ";
+}
+.home .child-notes li:last-of-type form {
+  display: inline;
+}
+
+/* ----- .search-form ----- */
+.home .search-form h3::after {
+  content: " 🔎";
+  font-size: smaller;
+}
+
+/* ----- .recent-notes ----- */
+.home .recent-notes h3::after {
+  content: " ⏳";
+  font-size: smaller;
+}
+.home .recent-notes li::before {
+  content: "📄 ";
+  font-size: smaller;
+  display: inline-block;
+  width: 1.25rem;
+}
