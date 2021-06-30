@@ -96,7 +96,7 @@ const Home = {
 
       if (response.ok) {
         const data = await response.json();
-        this.$router.push(`/notes/${data.note._id}`);
+        this.$router.push(`/edit/${data.note._id}`);
       } else {
         this.$router.push('/login');
       }
