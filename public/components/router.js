@@ -5,6 +5,7 @@ import Note from './Note.js';
 import Note2 from './Note2.js';
 import Edit from './Edit.js';
 import Search from './Search.js';
+import SearchTitles from './SearchTitles.js';
 import Login from './Login.js';
 import Register from './Register.js';
 import Error from './Error.js';
