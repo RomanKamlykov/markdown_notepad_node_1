@@ -29,6 +29,14 @@ const Home = {
       </div>
       
       <div class="search-form">
+        <h3>Search titles</h3>
+        <form action="/searchTitles" method="GET" v-on:submit="searchTitles">
+          <input type="text" name="query" />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      
+      <div class="search-form">
         <h3>Search</h3>
         <form action="/search" method="GET" v-on:submit="searchNotes">
           <input type="text" name="query" />
@@ -105,6 +113,11 @@ const Home = {
       e.preventDefault();
       const query = e.target.elements.query.value;
       if (query) this.$router.push(`/search/${query}`);
+    },
+    searchTitles(e) {
+      e.preventDefault();
+      const query = e.target.elements.query.value;
+      if (query) this.$router.push(`/searchTitles/${query}`);
     },
     logout(e) {
       e.preventDefault();
