@@ -18,6 +18,7 @@ const routes = [
   { path: '/notes/:id', component: Note, props: true, meta: { requiresAuth: true } },
   { path: '/edit/:id', component: Edit, props: true, meta: { requiresAuth: true } },
   { path: '/search/:query', component: Search, props: true, meta: { requiresAuth: true } },
+  { path: '/searchTitles/:query', component: SearchTitles, props: true, meta: { requiresAuth: true } },
   { path: '/login', component: Login },
   { path: '/register', component: Register },
   { path: '/error', component: Error },
