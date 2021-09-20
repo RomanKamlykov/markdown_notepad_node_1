@@ -21,6 +21,7 @@ Task | Method | Path
 --- | --- | ---
 Home page | GET | /home
 Search for notes | GET | /notes
+Search for titles | GET | /titles
 Create a note | POST | /notes
 Read a note | GET | /notes/:id
 Update a note | PUT | /notes/:id
