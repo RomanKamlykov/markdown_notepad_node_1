@@ -69,6 +69,25 @@ router.get('/notes', async (req, res) => {
   }
 });
 
+router.get('/titles', async (req, res) => {
+  const { name: author } = req.user;
+  const { query } = req.query;
+
+  try {
+    // get some notes
+    const notes = await Note.find(
+      { author, title: { $regex: query, $options: 'i' } },
+    ).sort(
+      { updatedAt: 'desc' },
+    );
+
+    res.json({ query, notes });
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+  }
+});
+
 // ----- create a note -----
 router.post('/notes', async (req, res) => {
   const { name: author } = req.user;
