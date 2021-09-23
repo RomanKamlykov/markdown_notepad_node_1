@@ -70,3 +70,13 @@
 .note .child-notes li:last-of-type form {
   display: inline;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+td {
+  padding: 0px 5px;
+}
