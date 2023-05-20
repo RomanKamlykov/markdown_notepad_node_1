@@ -1,3 +1,5 @@
+// @ts-check
+'use strict';
 const mongoose = require('mongoose');
 
 const noteSchema = new mongoose.Schema({
@@ -34,5 +36,21 @@ const noteSchema = new mongoose.Schema({
   },
 });
 
+/**
+ * @typedef {Object} Note
+ * @property {number} id
+ * @property {string} title
+ * @property {string} markdown
+ * @property {string} author
+ * @property {Date} createdAt
+ * @property {Date} updatedAt
+ * @property {string} parentNodeId
+ * @property {string} nodeId
+ */
+
 const Note = mongoose.model('Note', noteSchema);
-module.exports = { Note, noteSchema };
+
+module.exports = {
+  Note,
+  noteSchema,
+};

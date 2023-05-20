@@ -1,3 +1,5 @@
+// @ts-check
+'use strict';
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -14,5 +16,18 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
 });
+
+/**
+ * @typedef {Object} User
+ * @property {number} id
+ * @property {string} name
+ * @property {string} email
+ * @property {string} password
+ */
+
 const User = mongoose.model('User', userSchema);
-module.exports = { User, userSchema };
+
+module.exports = {
+  User,
+  userSchema,
+};

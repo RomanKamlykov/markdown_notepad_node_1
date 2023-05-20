@@ -1,4 +1,5 @@
 // @ts-check
+'use strict';
 /**
  * @param {string} str
  * @returns {string}
