@@ -23,7 +23,7 @@ const Note = {
 
       <div class="content" v-html="html">
       </div>
-      
+
       <div class="child-notes">
         <h3>Notes</h3>
         <ul>
@@ -143,8 +143,8 @@ const Note = {
         });
 
         if (response.ok) {
-          const data = await response.json();
-          this.path = data.path;
+          const path = await response.json();
+          this.path = path;
         } else {
           this.$router.push('/login');
         }

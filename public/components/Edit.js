@@ -66,8 +66,8 @@ const Edit = {
       });
 
       if (response.ok) {
-        const data = await response.json();
-        this.markdown = data.note.markdown;
+        const note = await response.json();
+        this.markdown = note.markdown;
       } else {
         this.$router.push('/login');
       }
