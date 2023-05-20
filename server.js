@@ -15,6 +15,13 @@ app.use('/', verifyToken, notesRouter);
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(uri, options, () => {
-  app.listen(PORT, console.log(`MongoDB connected. App available on http://localhost:${PORT}.`));
+mongoose.connect(uri, options, (err) => {
+  if (err) {
+    console.error(err);
+    process.exit(1);
+  } else {
+    app.listen(PORT, () => {
+      console.log(`MongoDB connected. App available on http://localhost:${PORT}.`);
+    });
+  }
 });
